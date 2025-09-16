@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz — Guardiões da Amazônia</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <a class="brand" href="../index.html">
+      <img src="../img/logo.png" alt="Logo" />
+      <span>Guardiões da Amazônia</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="biodiversidade.html">Biodiversidade</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="participe.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Quiz</h1>
+    <p>Responda às perguntas e clique em "Ver resultado".</p>
+
+    <form class="quiz" id="quiz-form">
+      <div class="question">
+        <p>1) Qual ave amazônica é conhecida pelas penas coloridas?</p>
+        <div class="options">
+          <label><input type="radio" name="q1" value="a"> Coruja</label>
+          <label><input type="radio" name="q1" value="b"> Arara-azul</label>
+          <label><input type="radio" name="q1" value="c"> Pomba</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>2) O açaí, muito consumido no Brasil, vem de qual tipo de planta?</p>
+        <div class="options">
+          <label><input type="radio" name="q2" value="a"> Palmeira</label>
+          <label><input type="radio" name="q2" value="b"> Arbusto</label>
+          <label><input type="radio" name="q2" value="c"> Trepadeira</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p>3) Qual animal amazônico é um mamífero aquático ameaçado de extinção?</p>
+        <div class="options">
+          <label><input type="radio" name="q3" value="a"> Peixe-boi-da-amazônia</label>
+          <label><input type="radio" name="q3" value="b"> Jacaré-açu</label>
+          <label><input type="radio" name="q3" value="c"> Tartaruga-da-amazônia</label>
+        </div>
+      </div>
+
+      <button type="submit">Confirmar</button>
+      <div id="result" class="result" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Guardiões da Amazônia — Victor Noronha.
+  </footer>
+  <script src="../js/quiz.js"></script>
+</body>
+</html>

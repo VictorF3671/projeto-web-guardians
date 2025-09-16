@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Participe — Guardiões da Amazônia</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <a class="brand" href="../index.html">
+      <img src="../img/logo.png" alt="Logo" />
+      <span>Guardiões da Amazônia</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="biodiversidade.html">Biodiversidade</a></li>
+        <li><a href="mapa.html">Mapa</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="participe.html">Participe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Participe</h2>
+    <form class="form-grid" onsubmit="event.preventDefault(); alert('Obrigado por participar!'); this.reset();">
+      <div>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" placeholder="Seu nome" required />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required />
+      </div>
+      <div>
+        <label for="mensagem">Descrição</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descrição" required></textarea>
+      </div>
+      <div class="button-row">
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Guardiões da Amazônia — Victor Noronha.
+  </footer>
+</body>
+</html>
